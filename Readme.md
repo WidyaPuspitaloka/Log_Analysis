@@ -37,14 +37,14 @@ Starting virtual machine that will give you the PostgreSQL database and support 
 * Inside, you will find another directory called `vagrant`. Change directory to the `vagrant` directory
 * Inside the vagrant subdirectory, run the command `vagrant up` to download the Linux operating system and install it
 * Then, to log in to the installed Linux VM, run `vagrant ssh`
-* Inside the VM, change directory to `/vagrant` and look around with `ls` command.
+* Inside the VM, change directory to `/vagrant` and you can look around with `ls` command.
 
 Loading the data
 * To load the `newsdata.sql` data, cd into `vagrant` directory inside the VM and use the command `psql -d news -f newsdata.sql`
 * Once you have the data loaded into your database, connect to your database using `psql -d news` and you can explore the tables using the `\dt` and `\d` table commands and `select` statements
 
 Running the script
-* Inside the `vagrant` directory in the VM, cd into `Log_Analysis`
+* Inside the `vagrant` directory in the VM, cd into `Log_Analysis-master`
 * Run `$ python3 log_analysis.py` to execute the program and to see the result
 
 

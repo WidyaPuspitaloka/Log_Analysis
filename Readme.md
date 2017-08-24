@@ -29,7 +29,7 @@ You'll need database software (provided by a Linux virtual machine) and the data
 * Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (the link is provided by Udacity)
 * Clone or download, then unzip VM configuration, [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm ) provided by Udacity
 * Download [newsdata.sql](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) from the Udacity course page. Put this file into the `vagrant` directory, which is shared with your virtual machine.
-* Clone or download this repository into `vagrant` directory
+* Clone or download [this `Log_Analysis` repository](https://github.com/WidyaPuspitaloka/Log_Analysis.git) into `vagrant` directory
 
 ### Usage
 Starting virtual machine that will give you the PostgreSQL database and support software needed for this project
@@ -41,7 +41,7 @@ Starting virtual machine that will give you the PostgreSQL database and support 
 
 Loading the data
 * To load the `newsdata.sql` data, cd into `vagrant` directory inside the VM and use the command `psql -d news -f newsdata.sql`
-* Once you have the data loaded into your database, you can explore the tables using the `\dt` and `\d` table commands and `select` statements
+* Once you have the data loaded into your database, connect to your database using `psql -d news` and you can explore the tables using the `\dt` and `\d` table commands and `select` statements
 
 Running the script
 * Inside the `vagrant` directory in the VM, cd into `Log_Analysis`
